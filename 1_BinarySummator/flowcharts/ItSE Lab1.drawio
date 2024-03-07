@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-07T10:43:31.176Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="MJLtWIlBqupn-DbTpday" version="23.1.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-03-07T10:52:15.010Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="UQtct-Ei8sPDHNWZBeG6" version="23.1.2" type="github" pages="4">
   <diagram name="Main" id="Dsd7RLAv_pcuICUm3pZY">
     <mxGraphModel dx="712" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -14,10 +14,71 @@
     </mxGraphModel>
   </diagram>
   <diagram id="K7MPfQddciP1HyJjwYqK" name="GetSumOfTwoBinaries">
-    <mxGraphModel dx="712" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="491" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="cs9QN73lPlfBo52a3UyC-1" value="static string GetSumOfTwoBinaries&lt;br&gt;(string bin1, string bin2)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="355" y="430" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-3" value="string result = &quot;&quot;;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="510" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-4" value="int sum = 0;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="580" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-5" value="int i = bin1.Length - 1, j = bin2.Length - 1;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="650" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-6" value="i &amp;gt;= 0 || j &amp;gt;= 0 || sum == 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="362.5" y="720" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cs9QN73lPlfBo52a3UyC-7" target="cs9QN73lPlfBo52a3UyC-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cs9QN73lPlfBo52a3UyC-7" target="cs9QN73lPlfBo52a3UyC-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="929.9999999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="825" />
+              <mxPoint x="400" y="950" />
+              <mxPoint x="460" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-7" value="if (j &amp;gt;= 0)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="800" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cs9QN73lPlfBo52a3UyC-8" target="cs9QN73lPlfBo52a3UyC-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="950" />
+              <mxPoint x="460" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-8" value="sum += bin1[i] + bin2[j] - 2 * &#39;0&#39;;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="880" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="cs9QN73lPlfBo52a3UyC-9" target="cs9QN73lPlfBo52a3UyC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-9" value="result = (char)(sum % 2 + &#39;0&#39;) + result;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="980" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cs9QN73lPlfBo52a3UyC-10" target="cs9QN73lPlfBo52a3UyC-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-10" value="sum /= 2;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1050" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cs9QN73lPlfBo52a3UyC-11" value="i--; j--;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1110" width="60" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
