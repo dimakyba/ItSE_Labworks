@@ -7,3 +7,8 @@
 Variant 7 mod 5 = **2**
 
 Довжина комбінації - 7 символів
+
+
+to-do
+- [x] flowcharts
+- [ ] report
