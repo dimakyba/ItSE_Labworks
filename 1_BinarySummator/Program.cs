@@ -73,7 +73,7 @@ namespace BinarySummator
     {
       for (int i = 0; i < binary.Length; i++)
       {
-        if (binary.Length != 7)//hardcode
+        if (binary.Length != 7) //hardcode
         {
           Console.WriteLine("That length is not 7");
           return false;
