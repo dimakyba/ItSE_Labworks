@@ -39,7 +39,7 @@ tryAgain:
 
 func convertDecimalFracToBinary(frac float64) string {
 	var temp int
-	precision := 8
+	const precision = 8
 	result := "0."
 	for i := 0; i < precision; i++ {
 		frac *= 2
